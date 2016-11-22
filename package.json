@@ -1,0 +1,23 @@
+{
+  "name": "teste",
+  "version": "0.0.0",
+  "description": "",
+  "main": "teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "budo js/teste.js:build.js -o --live",
+    "build": "browserify js/teste.js -o build.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browserify": "~13.1.1",
+    "budo": "~9.2.2"
+  },
+  "dependencies": {
+    "angular": "~1.5.8",
+    "angular-aria": "~1.5.8",
+    "angular-animate": "~1.5.8",
+    "angular-material": "~1.1.1"
+  }
+}

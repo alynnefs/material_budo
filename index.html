@@ -1,0 +1,36 @@
+<html data-ng-app="MyApp">
+  <head>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="build.js"></script>
+  </head>
+<body>
+<div class="inputdemoErrors" ng-controller="AppCtrl" layout="column" layout-align="center center">
+
+  <md-content layout-padding="">
+    <form name="projectForm">
+      <div layout="row">
+        <md-input-container flex="50">
+          <label>Nome</label>
+          <input required="" name="clientName" ng-model="project.clientName" type="text">
+        </md-input-container>
+      </div>
+
+        <md-input-container flex="50">
+          <label>Senha</label>
+          <input required="" name="clientPass" ng-model="project.clientPass" type="password">
+        </md-input-container>
+      <div>
+        <md-button class="md-primary md-raised" ng-click="showAlert($event)">Entrar</md-button>
+      </div>
+    </form>
+  </md-content>
+
+</div>
+</body>
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+-->
